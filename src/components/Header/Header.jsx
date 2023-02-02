@@ -31,86 +31,130 @@ export const Header = () => {
     setHide1(false)
     setHide2(true)
     setCount(20)
-  }
-
-  React.useEffect(() => {
-    console.log('HI')
     setInterval(() => {
         setCount(prev => prev - 1)
     }, 1000)
-            setInterval(() => {
+    let first = setInterval(show1, 20000)
+    let second = setInterval(show2, 40000)
+    let third = setInterval(show3, 60000)
+    let forth = setInterval(show4, 80000)
+    let fifth = setInterval(show5, 100000)
+    let six = setInterval(show6, 120000)
+    let seven = setInterval(show7, 140000)
+    let eight = setInterval(show8, 160000)
+    let nine = setInterval(show9, 180000)
+    let ten = setInterval(show10, 200000)
+    let eleven = setInterval(show11, 220000)
+    function show1(){
         setHide2(false)
         setHide3(true)
+        console.log('1')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(first)
+        }
+    }
+    function show2(){
         setHide3(false)
         setHide4(true)
+        console.log('2')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(second)
+        }
+    }
+    function show3(){
         setHide4(false)
         setHide5(true)
+        console.log('3')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(third)
+        }
+    }
+    function show4(){
         setHide5(false)
         setHide6(true)
+        console.log('4')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(forth)
+        }
+    }
+    function show5(){
         setHide6(false)
         setHide7(true)
+        console.log('5')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(fifth)
+        }
+    }
+    function show6(){
         setHide7(false)
         setHide8(true)
+        console.log('6')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(six)
+        }
+    }
+    function show7(){
         setHide8(false)
         setHide9(true)
+        console.log('7')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(seven)
+        }
+    }
+    function show8(){
         setHide9(false)
         setHide10(true)
+        console.log('8')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(eight)
+        }
+    }
+    function show9(){
         setHide10(false)
         setHide11(true)
+        console.log('9')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(nine)
+        }
+    }
+    function show10(){
         setHide11(false)
         setHide12(true)
+        console.log('10')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
+        if(count === 20){
+            clearInterval(ten)
+        }
+    }
+    function show11(){
         setHide12(false)
         setHide13(true)
+        console.log('11')
         setCount(20)
         setCount(prev => prev - 1)
-            setInterval(() => {
-        setHide13(false)
-        setHide14(true)
-        setCount(20)
-        setCount(prev => prev - 1)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-        }, 20000)
-  }, [])
+        if(count === 20){
+        }
+    }
+}
 
   const onClickLanguage = () => {
     switch (activeIndex) {
