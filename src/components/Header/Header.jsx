@@ -212,6 +212,7 @@ export const Header = () => {
             {/*  */}
             
             <div className={hide2 ? 'headerMiddle' : 'headerMiddleHide'}>
+                <div className="box4"></div>
                 <h2 className='relax'>{langData[activeIndex].relax}</h2>
                 <p className='count'>{count}</p>
                 <p className='wait'>{langData[activeIndex].wait}</p>
@@ -245,12 +246,13 @@ export const Header = () => {
                 <p className='wait'>{langData[activeIndex].wait5}</p>
             </div>
             <div className={hide8 ? 'headerMiddle' : 'headerMiddleHide'}>
-                <div className="box4"></div>
+                <div className="box5"></div>
                 <h2 className='relax'>{langData[activeIndex].clock}</h2>
                 <p className='count'>{count}</p>
                 <p className='wait'>{langData[activeIndex].wait6}</p>
             </div>
             <div className={hide9 ? 'headerMiddle' : 'headerMiddleHide'}>
+                <div className="box6"></div>
                 <h2 className='relax'>{langData[activeIndex].spyral}</h2>
                 <p className='count'>{count}</p>
                 <p className='wait'>{langData[activeIndex].wait7}</p>

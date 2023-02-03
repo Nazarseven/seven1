@@ -249,6 +249,71 @@ $color3: #333;
                 top: 15%;
             }
         }
+        .box4{
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 60%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: $color1;
+            animation-name: box4;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box4 {
+            0%{
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            50%{
+                transform: scale(.8);
+                opacity: .7;
+            }
+            100%{
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+        .box5{
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 60%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: $color1;
+            animation: box5 5s linear infinite;
+        }
+        @keyframes box5 {
+            0%{
+                transform: rotate(0deg) translate(-160px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translate(-160px) rotate(-360deg);
+            }
+        }
+        .box6{
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 60%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: $color1;
+            animation: box6 5s linear infinite;
+        }
+        @keyframes box6 {
+            0%{
+                transform: rotate(360deg) translate(-160px) rotate(-360deg);
+            }
+            100%{
+                transform: rotate(0deg) translate(-160px) rotate(0deg);
+            }
+        }
     }
     .headerMiddle{
         opacity: 1;
